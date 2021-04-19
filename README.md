@@ -1,3 +1,6 @@
+
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 # Hello world docker action
 
 このアクションは"Hello World"もしくは"Hello" + ログに挨拶する人物名を出力します。
