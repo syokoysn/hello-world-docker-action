@@ -1,0 +1,5 @@
+name: 'python test'
+description: 'python が使えるか確認'
+runs:
+    using: 'docker'
+    image: './Dockerfile'
