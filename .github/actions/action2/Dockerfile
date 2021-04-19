@@ -4,4 +4,4 @@ FROM python:3.7-slim-buster
 WORKDIR /usr/src/
 
 COPY test.py /usr/src/test.py
-CMD ["python", "test.py"]
+CMD ["python", "/usr/src/test.py"]
