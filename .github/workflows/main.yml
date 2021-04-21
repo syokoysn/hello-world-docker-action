@@ -25,7 +25,6 @@ jobs:
 
       - name: python test
         uses: ./.github/actions/action2 # Uses an action in the root directory
-        env:
         id: python
 
       - name: check secret
