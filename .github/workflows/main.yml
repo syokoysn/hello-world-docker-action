@@ -1,6 +1,8 @@
 name: hello world
 on: [push]
 
+env:
+  SECRET_KEY_TEST: ${{secrets.SECRET_KEY_TEST}} ## ※1
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
@@ -10,15 +12,21 @@ jobs:
       # リポジトリをチェックアウトする
       - name: Checkout
         uses: actions/checkout@v2
+
       - name: Hello world action step
         uses: ./.github/actions/action1 # Uses an action in the root directory
         id: hello
         with:
           who-to-greet: 'Mona the Octocat'
+
       # 「hello」ステップの出力を使用する
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
+
       - name: python test
         uses: ./.github/actions/action2 # Uses an action in the root directory
         id: python
+
+      - name: check secret
+        run: echo SECRET_KEY_TEST
       
