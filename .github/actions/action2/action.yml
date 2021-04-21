@@ -3,3 +3,5 @@ description: 'python が使えるか確認'
 runs:
     using: 'docker'
     image: './Dockerfile'
+    env: 
+        SECRET_KEY_TEST: SECRET_KEY_TEST

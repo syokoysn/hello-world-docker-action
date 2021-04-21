@@ -25,6 +25,8 @@ jobs:
 
       - name: python test
         uses: ./.github/actions/action2 # Uses an action in the root directory
+        env:
+          SECRET_KEY_TEST: ${{secrets.SECRET_KEY_TEST}} ## ※1
         id: python
 
       - name: check secret
