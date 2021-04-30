@@ -29,6 +29,10 @@ jobs:
           SECRET_KEY_TEST: ${{secrets.SECRET_KEY_TEST}} ## ※1
         id: python
 
+      - name: python check
+        uses: ./.github/actions/action3 # Uses an action in the root directory
+        id: python2
+
       - name: check secret
         run: echo ${SECRET_KEY_TEST}
       
