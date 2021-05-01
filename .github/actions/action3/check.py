@@ -1,6 +1,7 @@
-import mypackage
-
+#import mypackage
+import os
 
 
 if __name__ == '__main__':
-    print(mypackage.hello.hello())
+    print(os.listdir("./"))
+    #print(mypackage.hello.hello())
