@@ -2,6 +2,8 @@
 FROM python:3.7-slim-buster
 # 作業ディレクトリを設定
 
+WORKDIR /github/workspace/
+
 RUN pwd
 COPY check.py /github/workspace/check.py
 RUN pwd
