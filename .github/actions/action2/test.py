@@ -5,4 +5,5 @@ if __name__ == '__main__':
     check = os.environ.get('SECRET_KEY_TEST')
     print("check => ",check)
     print(check == "SECRET_KEY_TEST")
+    print(os.listdir("./"))
     print('done')
