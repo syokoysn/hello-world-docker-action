@@ -3,7 +3,7 @@ FROM python:3.7-slim-buster
 # 作業ディレクトリを設定
 
 RUN pwd
-COPY check.py /check.py
+COPY check.py /github/workspace/check.py
 RUN pwd
 RUN ls
-CMD ["python", "/check.py"]
+CMD ["python", "/github/workspace/check.py"]
