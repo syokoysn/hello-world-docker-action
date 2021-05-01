@@ -1,4 +1,4 @@
-#import mypackage
+import mypackage
 import os
 
 
