@@ -8,5 +8,5 @@ RUN pwd
 COPY check.py /check.py
 RUN pwd
 RUN ls
-RUN export PYTHONPATH="/github/workspace/:$PYTHONPATH"
+RUN export PYTHONPATH="/github/workspace:$PYTHONPATH"
 CMD ["python", "/check.py"]
