@@ -5,7 +5,8 @@ FROM python:3.7-slim-buster
 WORKDIR /github/workspace/
 
 RUN pwd
-COPY check.py /github/workspace/check.py
+COPY check.py /check.py
 RUN pwd
 RUN ls
-CMD ["python", "/github/workspace/check.py"]
+RUN export PYTHONPATH="/github/workspace/:$PYTHONPATH"
+CMD ["python", "/check.py"]
