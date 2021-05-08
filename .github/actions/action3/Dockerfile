@@ -9,4 +9,4 @@ COPY check.py /check.py
 RUN pwd
 RUN ls
 RUN export PYTHONPATH="/github/workspace:$PYTHONPATH"
-CMD ["python", "/check.py"]
+#CMD ["python", "/check.py"]
