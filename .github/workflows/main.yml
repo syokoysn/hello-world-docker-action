@@ -31,7 +31,8 @@ jobs:
 
       - name: python check
         uses: ./.github/actions/action3 # Uses an action in the root directory
-      -name: python check2
+
+      - name: python check2
         run: python .github/scripts/check.py
         id: python2
 
