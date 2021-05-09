@@ -7,7 +7,6 @@ if __name__ == '__main__':
     for i in os.listdir("./"):
         print(os.path.abspath(i))
     print(__file__)
-    sys.path.append("/github/workspace")
     print(sys.path)
     import mypackage
     print(mypackage.hello.hello())
