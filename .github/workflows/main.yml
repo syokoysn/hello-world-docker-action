@@ -33,6 +33,7 @@ jobs:
         uses: ./.github/actions/action3 # Uses an action in the root directory
 
       - name: python check2
+        run: pip install -e .
         run: python .github/scripts/check.py
         id: python2
 
